@@ -13,7 +13,7 @@ def add_vehicle_to_showroom(vehicle_list, visitor_count):
     model_no = input("Model number of car: ")
     print("")
     if validate_model(model_no, vehicle_list) == False:                 # check given model_no already exists or not
-        return 0
+        return visitor_count
     while (True):
         print("Type of car : ")
         print("1.Normal Vehicle \t 2.Sports Vehicle \t 3.Heavy Vehicle")
